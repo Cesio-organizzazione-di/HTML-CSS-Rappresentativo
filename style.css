@@ -1,0 +1,102 @@
+.menu{
+	top:0;
+	left:0;
+	width:100%;
+	position:fixed;
+	background-color:#f4f4f4;
+	z-index: 98;
+}
+
+.menu a{
+	font-size: 130%;
+	text-decoration: none;
+	color: black;
+	font-family:courier new;
+	display:block;
+	margin-left: 60px;
+	padding-bottom: 2%;
+}
+
+.menu a:after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.menu a:hover:after {
+	width: 100%;
+	background: #940f04;
+}
+
+.menu li{
+	float:left;
+	margin-right: 200px;
+	color:black;
+	list-style-type:none;
+}
+
+.sottomenu{
+	font-size:90%;
+	background-color: white;
+}
+
+.menu li ul{
+	display:none;
+}
+
+.menu li:hover ul{
+	display:block;
+	position:absolute;
+	z-index: 1;
+	width:200px;
+	padding:0;
+	top:42px;
+	background-color: rgba(192, 192, 192,0.8);
+	border-radius:10px;
+}
+
+#spostato{
+	margin-left:50px;
+}
+
+@media screen and (min-width: 1400px){
+	.grande{
+		visibility: visible;
+	}
+	
+	.piccolo{
+		display:none;
+	}
+}
+
+@media screen and (max-width: 1399px){
+	.grande{
+		display:none;
+	}
+	
+	.piccolo{
+		visibility:visible;
+		font-size: 1em;
+	}
+	
+	.menu a{
+		display: block;
+		text-align: center;
+		padding-bottom: 5px;
+		font-size: 1em;
+		margin-right: 10%;
+	}
+	
+	.menu a:hover:after {
+    width: 20%;
+    background: #940f04;
+    margin-left: 40%;
+	}
+	
+	.menu a:after {
+    transition: width .5s ease;
+	}
+	
+}
