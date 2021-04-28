@@ -6,7 +6,7 @@
   
 <html xmlns = "http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head> 
-		<title> Index  </title>
+		<title> Index </title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
@@ -50,7 +50,123 @@
 			<a href="#css">CSS</a>
 			<a href="#documenti">DOCUMENTI</a>
 		</div>
-	
+		
+		<div class="corpo">
+			
+			<h1 id="markup">1. Linguaggi di Markup</h1>
+			<p>
+				Quando si usa l’espressione <strong>“linguaggio di markup”</strong> ci si riferisce a un linguaggio che permette di descrivere i dati attraverso una formattazione specifica che utilizza i cosiddetti <strong>tag</strong>, che non sono altro che dei marcatori.
+				<br />
+				Un linguaggio di markup può essere definito come un <strong>gruppo di regole </strong>attraverso le quali vengono descritti i meccanismi di rappresentazione di un testo. Si è soliti distinguere tra i linguaggi di markup di tipo <strong>descrittivo</strong> e <strong>procedurale</strong>.
+				<ul>
+					<li>I linguaggi di markup di tipo <strong>procedurale</strong> specificano quali sono le procedure di trattamento del testo e indicano le istruzioni da eseguire affinché la porzione di testo referenziata possa essere visualizzata.</li>
+					<br />
+					<li>I linguaggi di markup di tipo <strong>descrittivo</strong> lasciano che sia il software a scegliere quale rappresentazione debba essere applicata al testo.</li>
+				</ul>
+			</p>	
+			<p>
+				In informatica l'<strong>HyperText Markup Language</strong> (traduzione letterale: linguaggio a marcatori per ipertesti), comunemente noto con l'acronimo HTML, è un linguaggio di markup.<br />
+				Nato per la formattazione e impaginazione di documenti ipertestuali disponibili nel web 1.0, oggi è utilizzato principalmente per il disaccoppiamento della struttura logica di una pagina web (definita appunto dal markup) e la sua rappresentazione, gestita tramite gli stili CSS per adattarsi alle nuove esigenze di comunicazione e pubblicazione all'interno di Internet.
+			</p>
+			<p>
+				L'HTML è derivato dall'<strong>SGML</strong> (Standard Generalized Markup Language), un metalinguaggio vente lo scopo di definire linguaggi da utilizzare per la stesura di testi destinati ad essere trasmessi ed archiviati con strumenti informatici, ossia per la stesura di documenti in forma leggibile da computer.
+			</p>
+			<p>
+				Una variante dell’HTML è l’XHTML, cioè l’<strong>eXtensible HyperText Markup Language</strong>, il linguaggio di marcatura di ipertesti estensibile, che in sostanza abbina i vantaggi offerti dall’HTML con alcune delle caratteristiche più importanti dell'XML.<br />
+				Si basa, tra l’altro, su un impiego più restrittivo, sia dal punto di vista della sintassi che dal punto di vista della validità, dei tag HTML, con i fogli di stile a cascata che impongono la resa grafica.
+			</p>
+			<hr />
+			<h1 id="xhtml">2.Linguaggio XHTML</h1>
+			<p>
+				Un <strong>elemento HTML</strong>, spesso chiamato anche <strong>tag HTML</strong>, indica una struttura in un documento HTML e un metodo per ordinare gerarchicamente i contenuti.
+			</p>
+			<p>
+				Il box model di una pagina Internet basata su markup (X)HTML è composto da due tipologie di elementi: gli <strong>inline elements</strong> e i <strong>block-level elements</strong>.
+			</p>
+			<p>
+				Un elemento <strong>block-level</strong> rappresenta un blocco separatore nel flusso della pagina;esso può contenere altri elementi block-level e anche elementi inline.<br />
+				Ad un elemento block-level è possibile attribuire delle dimensioni.<br />
+				Un elemento block level di dimensioni non specificate occupa tra margini, bordi, padding e contenuto, tutta la larghezza messa a disposizione del suo box contenitore. In verticale occuperà l’ altezza necessaria al suo contenuto.<br />
+				Elementi block-level adiacenti verranno disposti verticalmente.<br />
+				Esempi di elementi block-level sono:
+				<ul>
+					<li><strong>Headers</strong>: &lt;h1&gt;...&lt;/h1&gt;</li>
+					<li><strong>Tables</strong>: &lt;table&gt;...&lt;/table&gt;</li>
+					<li><strong>Paragraphs</strong>: &lt;p&gt;...&lt;/p&gt;</li>
+				</ul>
+			</p>
+			<p> 
+				Gli elementi <strong>inline</strong> sono elementi che non interrompono il flusso di pagina.<br />
+				Elementi inline possono contenere altri elementi inline ma non elementi block-level.<br />
+				Ad un elemento inline, a meno che questo non venga dichiarato float, posizionato o modificandone la sua natura con la proprietà display, non si possono attribuire delle dimensioni.<br />
+				Un elemento inline occuperà sia in orizzontale che in verticale l’ altezza necessaria al suo contenuto.<br />
+				Elementi inline adiacenti vengono disposti orizzontalmente.<br />
+				Esempi di elementi inline sono:
+				<ul>
+					<li><strong>Images</strong>: &lt;img... /&gt;</li>
+					<li><strong>Strong</strong>: &lt;strong&gt;...&lt;/strong&gt;</li>
+					<li><strong>Em</strong>: &lt;em&gt;...&lt;/em&gt;</li>
+				</ul>
+			</p>
+			<p>
+				Un <strong>attributo</strong> viene utilizzato per definire le caratteristiche di un elemento HTML ed è collocato all'interno del tag di apertura dell'elemento. Tutti gli attributi sono costituiti da due componenti: un nome e un valore:
+				<ul>
+					<li>Il <strong>nome</strong> indica la proprietà che si desidera impostare.</li>
+					<li>Il <strong>valore</strong> indica il valore che si desidera impostare per la proprietà specificata, ed è sempre inserito fra doppi apici.</li>
+				</ul>
+			</p>
+			<hr />
+			<h1 id="css">3.CSS</h1>
+			<p>
+				Il <strong>CSS</strong> (Cascading Style Sheets) è un linguaggio usato per definire la formattazione di documenti HTML, XHTML e XML, ad esempio i siti web e relative pagine web.<br />
+				L'introduzione del CSS si è resa necessaria per separare i contenuti delle pagine HTML dalla loro formattazione o layout e permettere una programmazione più chiara e facile da utilizzare, sia per gli autori delle pagine stesse sia per gli utenti, garantendo contemporaneamente anche il riutilizzo di codice ed una sua più facile manutenzione.
+			</p>
+			<p>
+				Esaminiamo le proprietà relative alla gestione dello <strong>sfondo</strong> con il CSS.<br />&Egrave; possibile inserire un’immagine o un colore di sfondo direttamente nel markup HTML. La scelta si restringe comunque a due elementi: il corpo principale della pagina (&lt;body&gt;) o le tabelle.
+				<br />
+				Un’altra limitazione riguarda il comportamento delle immagini di sfondo in HTML: esse vengono infatti ripetute in senso orizzontale e verticale fino a riempire l’intera area della finestra, del frame o della tabella. Proprio questo comportamento ha sempre favorito la scelta di piccole texture in grado di dare la sensazione visiva dell’uniformità.
+				<br />
+				Grazie ai CSS tali limiti vengono ovviati.
+			</p>
+			<p>
+				Analizziamo le porpriet&agrave; fornite da CSS per gestire lo sfondo:<br />
+				Per impostare il colore o un immagine di sfondo si utilizza il tag <strong>background</strong>.<br />
+				Per fornire diverse opzioni di formattazione si può utilizzare un suffisso in aggiunta a background, tra i quali:
+				<ul>
+					<li><strong>background-color</strong>: Permette di impostare un colore di sfondo, si consigliano i colori ritenuti "Web-safe";</li>
+					<li><strong>background-image</strong>: Permette di impostare un'imamgine di sfondo, caricata localmente o tramite URL;</li>
+					<li><strong>background-position</strong>: Permette di impostare la posizione dell'immagine, di default impostata a top-left;</li>
+					<li><strong>background-size</strong>: Permette di ridimensionare l'immagine utilizzata come sfondo;</li>
+				</ul>
+			</p>
+			<hr />
+			<h1 id="documenti">4.Documenti</h1>
+			<p>
+				Un documento valido è un documento scritto in uno specifico linguaggio di markup che rispetta la sintassi del linguaggio utilizzato.<br />
+				Per effettuare il controllo di qualità del documento il consorzio <strong>W3C</strong> ha reso disponibile il suo validatore che effettua la diagnostica e riferisce le eventuali irregolarità.<br />
+				L'<strong>autenticatore</strong><a href="https://validator.w3.org/" title="Validator"><img width="16" height="16" src="w3c.png" alt="Validator" /></a> è disponibile sul sito W3C.<br />
+				Se l'autenticatore non riscontra problemi il documento si può considerare valido.<br />
+			</p>
+			<br />
+			<p>
+				Un documento si dice <strong>ben formato</strong> se sono rispettate le seguenti caratteristiche:
+				<ul>
+					<li>Il documento contiene un unico elemento radice;</li>
+					<li>Gli elementi devono essere sempre chiusi con tag di chiusura o, se vuoti, tramite chiusura abbreviata (/&gt;);</li>
+					<li>Bisogna rispettare l’ordine di nidificazione: un elemento padre non può essere chiuso prima di un elemento figli;</li>
+					<li>XML è case sensitive: bisogna ricordarlo quando usiamo maiuscone e minuscole per nomi dei tag e attributi;</li>
+					<li>Gli attributi devono essere racchiusi tra singoli o doppi apici;</li>
+				</ul>
+			</p>
+			<br />
+			<p>
+				Un <strong>DTD</strong> è un documento che descrive i tag utilizzabili in un documento XML, la loro reciproca relazione nei confronti della struttura del documento e altre informazioni sugli attributi di ciascun tag.<br />
+				<br />
+				La sintassi di un Dtd si basa principalmente sulla presenza di due dichiarazioni: <strong>&lt;!ELEMENT&gt;</strong> e <strong>&lt;!ATTLIST&gt;</strong>.<br />
+				La prima definisce gli elementi utilizzabili nel documento e la struttura del documento stesso, la seconda definisce la lista di attributi per ciascun elemento.<br />
+				Il <strong>Transitional</strong> e <strong>Frameset</strong> invece è per documenti obsoleti.
+			</p>
+		</div>
 		
 	
 	</body>

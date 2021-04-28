@@ -100,3 +100,42 @@
 	}
 	
 }
+
+.corpo{
+	position:absolute;
+	top:15%;
+	height:500%;
+	color:SlateGray;
+	font-family: garamond;
+	background-color: white;
+}
+
+.corpo strong, em{
+	color:black;
+}
+
+.corpo ul{
+	padding-left:12%;
+	font-size:120%;
+	padding-top: 1%;
+}
+
+.corpo hr{
+	background-color:#940f04;
+	height: 1px;
+	width: 50%;
+	margin-top: 10%;
+}
+
+::selection{
+background: #940f04;
+color: white;
+}
+
+.riga p{
+	
+}
+
+.riga h1{
+	
+}
