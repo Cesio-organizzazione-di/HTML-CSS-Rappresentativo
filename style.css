@@ -1,130 +1,135 @@
 .menu{
-	top:0;
-	left:0;
-	width:100%;
-	position:fixed;
-	background-color:#f4f4f4;
-	z-index: 98;
+    top:0;
+    left:0;
+    position:fixed;
+    background-color:#f4f4f4;
+    z-index: 98;
+	width: 100%
 }
 
 .menu a{
-	font-size: 130%;
-	text-decoration: none;
-	color: black;
-	font-family:courier new;
-	display:block;
-	margin-left: 60px;
-	padding-bottom: 2%;
+    font-size: 130%;
+    text-decoration: none;
+    color: black;
+    font-family:courier new;
+    display:block;
+    margin-left: 60px;
+    padding-bottom: 2%;
 }
 
 .menu a:after {
-	content: '';
-	display: block;
-	height: 2px;
-	width: 0;
-	background: transparent;
-	transition: width .5s ease, background-color .5s ease;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
 }
 .menu a:hover:after {
-	width: 100%;
-	background: #940f04;
+    width: 100%;
+    background: #940f04;
 }
 
 .menu li{
-	float:left;
-	margin-right: 200px;
-	color:black;
-	list-style-type:none;
+    float:left;
+    margin-right: 200px;
+    color:black;
+    list-style-type:none;
 }
 
 .sottomenu{
-	font-size:90%;
-	background-color: white;
+    font-size:90%;
+    background-color: white;
 }
 
 .menu li ul{
-	display:none;
+    display:none;
 }
 
 .menu li:hover ul{
-	display:block;
-	position:absolute;
-	z-index: 1;
-	width:200px;
-	padding:0;
-	top:42px;
-	background-color: rgba(192, 192, 192,0.8);
-	border-radius:10px;
+    display:block;
+    position:absolute;
+    z-index: 1;
+    width:200px;
+    padding:0;
+    top:42px;
+    background-color: rgba(192, 192, 192,0.8);
+    border-radius:10px;
 }
 
 #spostato{
-	margin-left:50px;
+    margin-left:50px;
+}
+
+p {
+	padding-bottom: 500%;
+	margin-top: 500px;
 }
 
 @media screen and (min-width: 1400px){
-	.grande{
-		visibility: visible;
-	}
+    .grande{
+        visibility: visible;
+    }
+
+    .piccolo{
+        display:none;
+    }
 	
-	.piccolo{
-		display:none;
-	}
 }
 
 @media screen and (max-width: 1399px){
-	.grande{
-		display:none;
-	}
-	
-	.piccolo{
-		visibility:visible;
-		font-size: 1em;
-	}
-	
-	.menu a{
-		display: block;
-		text-align: center;
+    .grande{
+        display:none;
+    }
+
+    .piccolo{
+        visibility:visible;
+        font-size: 1em;
+    }
+
+    .menu a{
+        display: block;
+        font-size:1em;
 		padding-bottom: 5px;
-		font-size: 1em;
+        text-align: center;
 		margin-right: 10%;
-	}
+    }
 	
 	.menu a:hover:after {
-    width: 20%;
-    background: #940f04;
-    margin-left: 40%;
+		width: 20%;
+		background: #940f04;
+		margin-left: 40%;
 	}
-	
+
 	.menu a:after {
-    transition: width .5s ease;
-	}
-	
+		transition: width .5s ease;
+	}	
 }
 
 .corpo{
-	position:absolute;
-	top:15%;
-	height:500%;
-	color:SlateGray;
-	font-family: garamond;
-	background-color: white;
+    position:absolute;
+    top:15%;
+    height:500%;
+    color:SlateGray;
+    font-family: garamond;
+    background-color: white;
 }
 
 .corpo strong, em{
-	color:black;
+    color:black;
 }
 
 .corpo ul{
-	padding-left:12%;
-	font-size:120%;
-	padding-top: 1%;
+    padding-left:12%;
+    font-size:120%;
+    padding-top: 1%;
 }
 
 .corpo hr{
-	background-color:#940f04;
-	height: 1px;
-	width: 50%;
-	margin-top: 10%;
+    background-color:#940f04;
+    height: 1px;
+    width: 50%;
+    margin-top: 10%;
 }
 
 ::selection{
@@ -133,9 +138,9 @@ color: white;
 }
 
 .riga p{
-	
+
 }
 
 .riga h1{
-	
+
 }
