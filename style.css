@@ -1,202 +1,189 @@
 .menu{
-    top:0;
-    left:0;
-    position:fixed;
-    background-color:#f4f4f4;
-    z-index: 98;
-	width: 100%
+	top:0;
+	left:0;
+	width:100%;
+	position:fixed;
+	background-color:#f4f4f4;
+	z-index: 98;
 }
 
 .menu a{
-    font-size: 130%;
-    text-decoration: none;
-    color: black;
-    font-family:courier new;
-    display:block;
-    margin-left: 60px;
-    padding-bottom: 2%;
+	font-size: 130%;
+	text-decoration: none;
+	color: black;
+	font-family:courier new;
+	display:block;
+	margin-left: 60px;
+	padding-bottom: 2%;
 }
 
 .menu a:after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
 }
 .menu a:hover:after {
-    width: 100%;
-    background: #940f04;
+	width: 100%;
+	background: #940f04;
 }
 
 .menu li{
-    float:left;
-    margin-right: 200px;
-    color:black;
-    list-style-type:none;
+	float:left;
+	margin-right: 200px;
+	color:black;
+	list-style-type:none;
 }
 
 .sottomenu{
-    font-size:90%;
-    background-color: white;
+	font-size:90%;
+	background-color: white;
 }
 
 .menu li ul{
-    display:none;
+	display:none;
 }
 
 .menu li:hover ul{
-    display:block;
-    position:absolute;
-    z-index: 1;
-    width:200px;
-    padding:0;
-    top:42px;
-    background-color: rgba(192, 192, 192,0.8);
-    border-radius:10px;
+	display:block;
+	position:absolute;
+	z-index: 1;
+	width:200px;
+	padding:0;
+	top:42px;
+	background-color: rgba(192, 192, 192,0.8);
+	border-radius:10px;
 }
 
 #spostato{
-    margin-left:50px;
+	margin-left:50px;
 }
 
-
 @media screen and (min-width: 1400px){
-    .grande{
-        visibility: visible;
-    }
-
-    .piccolo{
-        display:none;
-    }
+	.grande{
+		visibility: visible;
+	}
 	
+	.piccolo{
+		display:none;
+	}
 }
 
 @media screen and (max-width: 1399px){
-    .grande{
-        display:none;
-    }
-
-    .piccolo{
-        visibility:visible;
-        font-size: 1em;
-    }
-
-    .menu a{
-        display: block;
-        font-size:1em;
+	.grande{
+		display:none;
+	}
+	
+	.piccolo{
+		visibility:visible;
+		font-size: 0.8em;
+	}
+	
+	.menu a{
+		display: block;
+		text-align: center;
 		padding-bottom: 5px;
-        text-align: center;
+		font-size: 1em;
 		margin-right: 10%;
-    }
+	}
 	
 	.menu a:hover:after {
 		width: 20%;
 		background: #940f04;
 		margin-left: 40%;
 	}
-
+	
 	.menu a:after {
 		transition: width .5s ease;
 	}
 	
-	.sinistra img {
-		display: none;
+	.sinistra img{
+		display:none;
 	}
 }
 
-.corpo {
-    position:absolute;
-    color: darkslategray;
-    font-family: garamond;
-	font-size: 110%;
+.corpo{
+	position:absolute;
+	color:darkslategray;
+	font-family: garamond;
 	width: 100%;
-}
-
-.corpo p {
-	width: 50%;
-	margin-left: 25%;
+	font-size:110%;
 }
 
 .corpo h1{
 	padding-top: 5%;
 	font-family:Lucida console;
-	color: slategray;
-	margin-left: 22%;
+	color:slategray;
+	margin-left:22%;
 }
 
 .corpo strong, em{
-    color:black;
-}
-
-.corpo ul{
-    margin-left:27%;
-	font-size: 120%;
-	width:40%;
+	color:black;
 }
 
 .corpo hr{
-    background-color:#940f04;
-    height: 1px;
-    width: 25%;
-    margin-top: 5%;
+	background-color:#940f04;
+	height: 1px;
+	width: 25%;
+	margin-top:5%;
 }
 
+.corpo ul{
+	margin-left:27%;
+	font-size:120%;
+	width: 40%;
+}
+
+.corpo p{
+	width: 50%;
+	margin-left: 25%;
+}
 
 ::selection{
-background: #940f04;
-color: white;
+	background: #940f04;
+	color: lightyellow;
 }
 
-.riga {
+.riga{
 	display: inline-flex;
-	padding-top: 2%;
+	padding-top:2%;
 	width: 100%;
 }
 
-.riga h2 {
+.riga h2{
 	margin-left: 5%;
-	color: #940f04;
+	color:#940f04;
 	font-family: arial;
 }
 
-.riga h3 {
+.riga h3{
 	margin-left: 2%;
-	color: #940f04;
+	color:#940f04;
 	font-family: arial;
 }
 
-.sinistra {
+.sinistra{
 	width: 25%;
-	left: 0;
-	position: fixed;
-	}
+	left:0;
+	position:fixed;
+}
 
 .sinistra img{
-    position: relative;
-    padding-top: 20%;
-    padding-left: 15%;
-    padding-right: 2%;
-}
-
-#mod {
 	position: relative;
-	padding-bottom: 30px;
-	margin-left: 90%;
+	padding-top: 20%;
+	padding-left: 15%;
+	padding-right: 2%;
 }
 
-body {
-	background-image: url(blur.jpeg);
+#mod{
+	position:relative;
+	margin-left: 92%;
+	padding-bottom:30px;
+}
+
+body{
+	background-image: url(A.jpg);
 	background-size: 500%;
 }
-	
-
-
-
-
-
-
-
-
-
